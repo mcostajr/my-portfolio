@@ -1,0 +1,97 @@
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homeWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.homeInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.homeInfo .ballon {
+  width: 5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background: rgb(103, 210, 183);
+  border: 1px solid rgb(103, 210, 183);
+  border-radius: 20px 20px 20px 0px;
+}
+
+.homeInfo h2 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 2px;
+}
+
+.homeInfo h4 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.homeInfo > span {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.fab {
+  color: rgb(46, 33, 33);
+}
+
+.homeInfo ul {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.moldure {
+  display: inline-block;
+  border: rgb(223, 222, 222) 10px solid;
+  border-radius: 50%;
+}
+
+.image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: rgb(211, 210, 210) 10px solid;
+
+  background-image: url('./photo.JPG');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .homeContainer {
+      margin-top: 8rem;
+      margin-bottom: 8rem;
+  }
+  .homeWrapper {
+      gap: 6rem;
+  }
+
+  .homeInfo ul {
+      margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .homeWrapper {
+    flex-direction: column-reverse;
+  }
+}
